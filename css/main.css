@@ -140,6 +140,7 @@ body {
 }
 
 .headshot {
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -303,12 +304,10 @@ body {
         justify-content: center;
     }
     .headshot {
-        align-self: center;
         flex-direction: row;
         margin-right: initial;
     }
     .hero-row {
-        align-items: center;
         flex-direction: column;
     }
     .hjumbosmall {
