@@ -303,6 +303,7 @@ body {
         justify-content: center;
     }
     .headshot {
+        align-self: center;
         flex-direction: row;
         margin-right: initial;
     }
