@@ -98,6 +98,7 @@ p {
     flex-direction: column;
     justify-content: center;
     margin-right: 30px;
+    align-self: center;
 }   
 
 nav {
