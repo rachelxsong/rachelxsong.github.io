@@ -1,7 +1,5 @@
-body {
-    margin: 40px auto;
-    width: 70%;
-}
+/* links and buttons
+==================================================*/
 
 a {
     text-decoration: none;
@@ -13,19 +11,25 @@ a:hover {
     color: #999;
 }
 
-.hjumbo {
-    font-size: 64px;
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 80px
+
+.button {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 12px;
+  font-style: 'Montserrat', sans-serif;
+  line-height: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.hjumbosmall {
-    font-size: 36px;
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 50px
-}
+/* font styling
+==================================================*/
 
 h1 {
     font-size: 44px;
@@ -55,6 +59,20 @@ h4 {
     line-height: 38px
 }
 
+.hjumbo {
+    font-size: 64px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 80px
+}
+
+.hjumbosmall {
+    font-size: 36px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 30px
+}
+
 p {
     font-size: 16px;
     font-family:'Montserrat', sans-serif;
@@ -70,36 +88,10 @@ p {
     opacity: 0.6
 }
 
-.button {
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 12px 25px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  font-size: 12px;
-  font-style: 'Montserrat', sans-serif;
-  line-height: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+ 
 
-.hero-row {
-    display: flex;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-}
-
-.headshot {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 30px;
-    align-self: center;
-}   
+/* nav bar and footer
+==================================================*/
 
 nav {
     font-family:'Montserrat', sans-serif;
@@ -138,6 +130,35 @@ footer {
     height: 34px;
     font-family:'Montserrat', sans-serif;
 }
+
+/* flexbox for body
+==================================================*/
+
+body {
+    margin: 40px auto;
+    width: 70%;
+}
+
+.headshot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+}  
+
+.hero-row {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* portfolio section
 ==================================================*/
@@ -277,9 +298,6 @@ footer {
 /* Responsive media queries
 ==================================================*/
 
-@media (max-width: 991px) {
-}
-
 @media only screen and (max-width: 815px) {
     .hero-row {
         flex-direction: column;
@@ -298,14 +316,6 @@ footer {
     .plight {
         text-align: justify;
     }
-
-}
-
-@media only screen and (max-width: 520px) {
-
-}
-
-@media only screen and (max-width: 420px) {
 
 }
 
