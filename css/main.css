@@ -3,12 +3,12 @@
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #ba7967;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #999;
+    color: #ba7967;
 }
 
 
@@ -140,15 +140,21 @@ body {
 }
 
 .headshot {
-    align-self: center;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 40px;
 }  
 
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .hero-row {
-    align-items: center;
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -304,7 +310,7 @@ body {
         justify-content: center;
     }
     .headshot {
-        flex-direction: row;
+        align-self: center;
         margin-right: initial;
     }
     .hero-row {
