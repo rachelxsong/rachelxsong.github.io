@@ -3,12 +3,12 @@
 
 a {
     text-decoration: none;
-    color: #ba7967;
+    color: #6f4451;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #ba7967;
+    color: #6f4451;
 }
 
 
@@ -85,7 +85,7 @@ p {
     font-family:'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 28px;
-    opacity: 0.6
+    opacity: 0.7
 }
 
  
@@ -162,13 +162,6 @@ body {
 .hero-text {
     display: flex;
     flex-direction: column;
-}
-
-/* social media icons
-==================================================*/
-
-.fab.fa-twitter {
-    color: #ba7967;
 }
 
 
