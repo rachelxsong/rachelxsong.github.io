@@ -102,22 +102,28 @@ p {
 nav {
     font-family:'Montserrat', sans-serif;
     border-bottom: 1px solid #d5d5d5;
+    width: 70vw;
 }
 
-nav a.logo {
-    display: inline;
-    float: left;
+.nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+a.logo {
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-nav a.logo:hover {
+a.logo:hover {
     text-decoration: none;
 }
 
-nav ul {
-    list-style: none;
-    text-align: right;
+.nav-menu {
+    display: flex;
 }
 
 a.navitem {
@@ -127,10 +133,6 @@ a.navitem {
     line-height: 20px;
 }
 
-.footer {
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 nav ul li, footer ul li {
     display: inline;
@@ -140,6 +142,12 @@ nav ul li, footer ul li {
 
 footer {
     border-top: 1px solid #d5d5d5;
+    width: 70vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 /* flexbox for body
@@ -173,7 +181,6 @@ body {
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 .hero-text {
