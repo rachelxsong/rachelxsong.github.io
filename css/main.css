@@ -133,6 +133,9 @@ a.navitem {
     line-height: 20px;
 }
 
+nav ul, footer ul {
+    padding: 0;
+}
 
 nav ul li, footer ul li {
     display: inline;
@@ -348,6 +351,10 @@ body {
     }
     .hjumbosmall {
         text-align: center;
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: center;
     }
     .plight {
         text-align: justify;
