@@ -357,10 +357,11 @@ body {
 @media only screen and (max-width: 750px) {
     body {
         margin: 40px auto;
-        width: 70%;
+        width: 80%;
     }
     .footer {
         justify-content: center;
+        width: 80vw;
     }
     .headshot {
         align-self: center;
@@ -375,9 +376,7 @@ body {
     .nav {
         flex-direction: column;
         justify-content: center;
-    }
-    p {
-        text-align: justify;
+        width: 80vw;
     }
     .welcome-text {
         text-align: center;
