@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-     color: #6f4451;
+    color: #6f4451;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
@@ -287,42 +287,42 @@ body {
 }
 
 
-/*.portfolio_item .portfolio_item_hover {
+.portfolio-item > .portfolio-item-hover {
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, .8);
-    -webkit-transform: translate(-100%);
-    transform: translate(-100%);
+    background-color: #6f4451;
     opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}*/
-
-.portfolio_item .portfolio_item_hover .item_info {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    width: 100%;
-    font-weight: bold;
+    transition: opacity .2s;
 }
 
-.portfolio_item .portfolio_item_hover .item_info span {
+.portfolio-item:hover .portfolio-item-hover {
+    opacity: 1;
+}
+
+.portfolio-item > .portfolio-item-hover > .item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.portfolio-item > .portfolio-item-hover > .item-info > p {
+    color: #ffffff;
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
     display: block;
-    color: #fff;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 18px;
-    -webkit-transform: translateX(-100px);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+/*    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
     -webkit-transition: all .2s ease-in-out .2s;
-    transition: all .2s ease-in-out .2s;
-    opacity: 0;
+    transition: all .2s ease-in-out .2s;*/
 }
 
 .portfolio_item .portfolio_item_hover .item_info em {
@@ -340,12 +340,6 @@ body {
     opacity: 0;
     font-size: 10px;
     letter-spacing: 2px;
-}
-
-.portfolio_item:hover .portfolio_item_hover {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
 }
 
 .portfolio_item:hover .item_info em,
@@ -375,11 +369,11 @@ body {
 @media only screen and (max-width: 800px) {
     body {
         margin: 40px auto;
-        width: 80%;
+        width: 90%;
     }
     .footer {
         justify-content: center;
-        width: 80vw;
+        width: 90vw;
     }
     .headshot {
         align-self: center;
@@ -394,7 +388,7 @@ body {
     .nav {
         flex-direction: column;
         justify-content: center;
-        width: 80vw;
+        width: 90vw;
     }
     .welcome-text {
         text-align: center;
@@ -404,7 +398,7 @@ body {
     }
     .portfolio-item{
         width: 100%;
-        padding-top: 66%;
+        padding-top: 50%;
     }
 }
 
