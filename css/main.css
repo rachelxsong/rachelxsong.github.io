@@ -215,46 +215,6 @@ body {
 /* portfolio section
 ==================================================*/
 
-.portfolio .categories-grid span {
-    font-family:'Helvetica';
-    font-size: 30px;
-    margin-bottom: 30px;
-    display: inline-block;
-}
-
-.portfolio .categories-grid .categories ul li {
-    float: left;
-    list-style: none;
-    margin: 20px 0;
-}
-
-.portfolio .categories-grid .categories ul li a {
-    display: inline-block;
-    color: #60606e;
-    padding: 0 10px;
-    margin: 0 10px;
-    -webkit-transition: all .2s ease-in-out .2s;
-    transition: all .2s ease-in-out .2s;
-}
-
-.portfolio .categories-grid .categories ul li a:hover,
-.portfolio .categories-grid .categories ul li a:focus {
-    text-decoration: none;
-}
-
-.portfolio .categories-grid .categories ul li a.active {
-    margin-left: 0;
-    background-color: #ffbf00;
-    padding: 0px 20px;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-}
-
-.portfolio_filter {
-    padding-left: 0;
-}
-
 .portfolio-row {
     display: flex;
     flex-direction: row;
@@ -268,24 +228,14 @@ body {
     padding-top: 30%;
     margin: 5px;
     overflow: hidden;
-/*    background-color: #f4f4f4;
-    background-position: 50% 50%;
-    background-size: cover;
-    text-align: center;
-    text-decoration: none;*/
 }
 
 .portfolio-item img{
   position: absolute;
-  top: -90%;
-  left: 0;
   bottom: 0;
-  right: 0;
-  margin: auto;
   min-height: 100%;
-  min-width: 100%;
+  width: 100%;
 }
-
 
 .portfolio-item > .portfolio-item-hover {
     position: absolute;
@@ -294,61 +244,29 @@ body {
     height: 100%;
     width: 100%;
     background-color: #6f4451;
-    opacity: 0;
     transition: opacity .2s;
+    opacity: 0;
 }
 
-.portfolio-item:hover .portfolio-item-hover {
+.portfolio-item:hover .info-slide:active .portfolio-item-hover {
     opacity: 1;
 }
 
 .portfolio-item > .portfolio-item-hover > .item-info {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .portfolio-item > .portfolio-item-hover > .item-info > p {
     color: #ffffff;
-    font-size: 14px;
-    font-family:'Montserrat', sans-serif;
-    font-weight: 400;
-    line-height: 20px;
     display: block;
-    padding-left: 30px;
-    padding-right: 30px;
+    line-height: 24px;
+    margin: 20px;
     text-align: left;
-/*    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    -webkit-transition: all .2s ease-in-out .2s;
-    transition: all .2s ease-in-out .2s;*/
 }
-
-.portfolio_item .portfolio_item_hover .item_info em {
-    font-style: normal;
-    display: inline-block;
-    background-color: #ffbf00;
-    padding: 5px 20px;
-    border-radius: 25px;
-    color: #333;
-    margin-top: 10px;
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    -webkit-transition: all .3s ease-in-out .3s;
-    transition: all .3s ease-in-out .3s;
-    opacity: 0;
-    font-size: 10px;
-    letter-spacing: 2px;
-}
-
-.portfolio_item:hover .item_info em,
-.portfolio_item:hover .item_info span {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
 
 .portfolio_filter {
     padding-left: 0;
@@ -369,11 +287,11 @@ body {
 @media only screen and (max-width: 800px) {
     body {
         margin: 40px auto;
-        width: 90%;
+        width: 80%;
     }
     .footer {
         justify-content: center;
-        width: 90vw;
+        width: 80vw;
     }
     .headshot {
         align-self: center;
@@ -388,20 +306,29 @@ body {
     .nav {
         flex-direction: column;
         justify-content: center;
-        width: 90vw;
+        width: 80vw;
     }
     .welcome-text {
         text-align: center;
     }
     .portfolio-row{
         flex-direction: column;
+        align-items: center;
     }
     .portfolio-item{
         width: 100%;
-        padding-top: 50%;
+        padding-top: 66%;
     }
 }
 
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    .portfolio-item > .portfolio-item-hover > .item-info > p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    }
+}
 
 
 /* Blog */
