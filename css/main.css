@@ -248,7 +248,7 @@ body {
     opacity: 0;
 }
 
-.portfolio-item:hover .portfolio-item-hover {
+.portfolio-item:hover .portfolio-item:active .portfolio-item-hover {
     opacity: 1;
 }
 
