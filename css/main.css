@@ -159,10 +159,10 @@ a.logo:hover {
 }
 
 a.navitem {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 1px;
-    line-height: 20px;
+    line-height: 28px;
 }
 
 nav ul, footer ul {
